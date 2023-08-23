@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@color/dark_pink">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:background="#E8C9DE"
+        android:elevation="10dp"
+        app:itemBackground="@color/white"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/dark_pink"
+        app:itemTextColor="@color/black"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/videocall"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share this code with others to start Meeting."
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="15dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/codeBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox"
+                android:ems="10"
+                android:hint="Enter the code"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/joinBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_style"
+                    android:text="Join"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/shareBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_style2"
+                    android:text="share"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

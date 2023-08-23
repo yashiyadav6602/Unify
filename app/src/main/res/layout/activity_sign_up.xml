@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/pink"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/videocall"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:text="UNIFY"
+                android:textSize="50sp"
+                android:textColor="@color/dark_pink"
+                />
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/ic_baseline_emoji_people"
+                android:ems="10"
+                android:drawablePadding="10dp"
+                android:hint="User Name"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_color" />
+
+
+            <EditText
+                android:id="@+id/emailBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/ic_baseline_email"
+                android:ems="10"
+                android:drawablePadding="10dp"
+                android:hint="Email Address"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_color" />
+
+            <EditText
+                android:id="@+id/passwordBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/ic_baseline_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+
+                android:padding="10dp"
+                android:textColorHint="@color/hint_color" />
+
+
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_style2"
+                android:text="Create an account"
+                android:textColor="@color/cream"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_style"
+                android:text="already have an account ?"
+                android:textColor="@color/cream"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
